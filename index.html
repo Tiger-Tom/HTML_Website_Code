@@ -39,8 +39,9 @@
   <!--INPUT-->
   <input type="text" value="INPUT TEXT" id="input1"></input>
   <button onclick="getTextInput()">SUBMIT INPUT</button>
+  <p id="inputOutput1"></p>
   <script> //JAVASCRIPT
-    functiopn getTextInput() { //FUNCTION
+    function getTextInput() { //FUNCTION
       var inputValue = document.getElementById("input1").value; //GET VALUE 
       document.getElementById("inputOutput1").innerHTML = inputValue; //CREATE TEXTVOX
     }
