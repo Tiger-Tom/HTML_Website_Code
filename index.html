@@ -39,11 +39,15 @@
   <!--INPUT-->
   <input type="text" value="INPUT TEXT" id="input1"></input>
   <button onclick="getTextInput()">SUBMIT INPUT</button>
+  <button onclick="resetOutput()">RESET</button>
   <p id="inputOutput1"></p>
   <script> //JAVASCRIPT
-    function getTextInput() { //FUNCTION
+    function getTextInput() { //FUNCTION //GET TEXT INPUT AND SET OUTPUT
       var inputValue = document.getElementById("input1").value; //GET VALUE 
-      document.getElementById("inputOutput1").innerHTML = inputValue; //CREATE TEXTVOX
+      document.getElementById("inputOutput1").innerHTML = inputValue; //CHANGE TEXT OUTPUT
+    }
+    function resetOutput() { //RESET TEXT OUTPUT
+      document.getElementById("inputOutput1").innerHTML = "";
     }
   </script> <!--END JAVASCRIPT-->
 </body>
