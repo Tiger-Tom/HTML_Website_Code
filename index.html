@@ -36,8 +36,15 @@
   <br>
   <button><b><i>ITALICBOLD</b>ITALIC</i><b>BOLD</b>BUTTON</button>
   <br>
-  <input type="text" name="INPUT NAME"></input>
-  
+  <!--INPUT-->
+  <input type="text" value="INPUT TEXT" id="input1"></input>
+  <button onclick="getTextInput()">SUBMIT INPUT</button>
+  <script> //JAVASCRIPT
+    functiopn getTextInput() { //FUNCTION
+      var inputValue = document.getElementById("input1").value; //GET VALUE 
+      document.getElementById("").innerHTML = inputValue; //CREATE TEXTVOX
+    }
+  </script> <!--END JAVASCRIPT-->
 </body>
 <!--DE-INITIALIZEE-->
 </html>
