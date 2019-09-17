@@ -41,7 +41,7 @@
   <input type="text" value="INPUT TEXT" id="input1"></input>
   <button onclick="getTextInput()">SUBMIT INPUT</button>
   <button onclick="resetOutput()">RESET</button>
-  <p id="inputOutput1"></p>
+  <p id="inputOutput1">INPUT TEXT</p>
   <script> //JAVASCRIPT
     function setOutput(txt_, htmlID_) {
       document.getElementById(htmlID).innerHTML = txt_;
@@ -51,8 +51,8 @@
       setOutput(inputValue, "inputOutput1") //CHANGE TEXT OUTPUT
     }
     function resetOutput() { //RESET TEXT OUTPUT
-      setOutput("inputOutput1", "");
-      setOutput("input1", "");
+      setOutput("inputOutput1", "INPUT TEXT");
+      setOutput("input1", "INPUT TEXT");
     }
   </script> <!--END JAVASCRIPT-->
 </body>
