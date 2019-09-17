@@ -43,13 +43,16 @@
   <button onclick="resetOutput()">RESET</button>
   <p id="inputOutput1"></p>
   <script> //JAVASCRIPT
+    function setOutput(txt_, htmlID_) {
+      document.getElementById(htmlID).innerHTML = txt_;
+    }
     function getTextInput() { //FUNCTION //GET TEXT INPUT AND SET OUTPUT
       var inputValue = document.getElementById("input1").value; //GET VALUE 
-      document.getElementById("inputOutput1").innerHTML = inputValue; //CHANGE TEXT OUTPUT
+      setOutput(inputValue, "inputOutput1") //CHANGE TEXT OUTPUT
     }
     function resetOutput() { //RESET TEXT OUTPUT
-      document.getElementById("inputOutput1").innerHTML = "";
-      document.getElementById("input1").innerHTML = "";
+      setOutput("inputOutput1", "");
+      setOutput("input1", "");
     }
   </script> <!--END JAVASCRIPT-->
 </body>
